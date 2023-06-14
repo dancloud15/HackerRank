@@ -11,16 +11,17 @@ import static java.util.stream.Collectors.toList;
 public class LonelyInteger {
 
     public static int lonelyinteger(List<Integer> a) {
-        int unique = -1;
+        Map<Integer, Integer> occurrences = new HashMap<>();
         for (Integer number : a) {
-            if (number % 2 == 0) {
-                if (a.indexOf(number) == a.lastIndexOf(number)) {
-                    unique = number;
-                    break;
-                }
-            }
+            occurrences.put(number, occurrences.getOrDefault(number, 0) + 1);
         }
+        
+     int unique =a.stream()
+                .filter(number -> occurrences.get(number) == 1)
+                .findFirst()
+                .orElse(-1);
         return unique;
+    }
 
     }
     public static void main(String[] args) throws IOException {
