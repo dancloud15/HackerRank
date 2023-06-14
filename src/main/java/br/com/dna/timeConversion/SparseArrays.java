@@ -28,19 +28,7 @@ public class SparseArrays {
         }
 
         return matchingStrings;
-        /*
-        List<Integer> matchingStrings = new ArrayList<>();
-        for (String q : queries) {
-            int count=0;
-            for (String s: strings) {
-                if (q.equalsIgnoreCase(s)) {
-                    count++;
-                }
-            }
-            matchingStrings.add(count);
-        }
-        // Write your code here
-        return matchingStrings;*/
+
     }
 
     /*
