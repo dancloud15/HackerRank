@@ -9,6 +9,23 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
+/*
+Vou colocar a resposta do chat GPT para economizar recursos, fica ai de aprendizado 
+
+int size = array.size();
+    int leftToRight = 0;
+    int rightToLeft = 0;
+
+    for (int i = 0; i < size; i++) {
+        List<Integer> row = array.get(i);
+        leftToRight += row.get(i);
+        rightToLeft += row.get(size - 1 - i);
+    }
+
+    return Math.abs(leftToRight - rightToLeft);
+
+*/
+
 public class DiagonalDifference{
 
     public static int diagonalDifference(List<List<Integer>> array) {
@@ -19,9 +36,8 @@ public class DiagonalDifference{
         for (int i = 0; i < array.size(); i++) {
             leftToRight += array.get(i).get(i);
             rightToLeft += array.get(i).get(size-i);
-        }
-        System.out.println(Math.abs(leftToRight-rightToLeft));
-        return leftToRight-rightToLeft;
+        }        
+        return Math.abs(leftToRight-rightToLeft);
     }
 
     public static void main(String[] args) throws IOException {
