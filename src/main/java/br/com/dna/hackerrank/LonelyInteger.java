@@ -1,4 +1,4 @@
-package br.com.dna.timeConversion;
+package br.com.dna.hackerrank;
 
 import java.io.*;
 import java.util.HashMap;
@@ -21,8 +21,6 @@ public class LonelyInteger {
                 .findFirst()
                 .orElse(-1);
         return unique;
-    }
-
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));

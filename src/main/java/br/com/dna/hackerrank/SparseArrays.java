@@ -1,4 +1,4 @@
-package br.com.dna.timeConversion;
+package br.com.dna.hackerrank;
 
 import java.io.*;
 import java.util.ArrayList;
