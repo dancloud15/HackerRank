@@ -1,8 +1,7 @@
-package br.com.dna.hackerrank;
+package br.com.dna.hackerrank.firstweek;
 
 import java.io.*;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Pangrams {
