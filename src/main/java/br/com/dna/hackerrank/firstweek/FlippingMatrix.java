@@ -1,4 +1,4 @@
-package br.com.dna.hackerrank;
+package br.com.dna.hackerrank.firstweek;
 import org.w3c.dom.ls.LSOutput;
 
 import java.util.List;

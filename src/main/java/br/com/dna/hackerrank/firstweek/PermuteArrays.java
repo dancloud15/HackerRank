@@ -1,7 +1,6 @@
-package br.com.dna.hackerrank;
+package br.com.dna.hackerrank.firstweek;
 
 import java.io.*;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.IntStream;
