@@ -7,26 +7,12 @@ import java.util.List;
 
 public class PageCount {
     private static int pageCount(int n, int p) {
-        int count =-1;
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i <= n; i++) {
-            list.add(i);
-        }
-        if (n/2<p){
-            Collections.reverse(list);
-            for (int i = 0; i <= p; i++) {
-                i++;
-                count++;
+        // O número mínimo de páginas a serem viradas é a menor distância entre o início e o final do livro
+        // em relação à página alvo
+        int total = n / 2;  // Total de páginas no livro
+        int pagina = p / 2;  // Página alvo
 
-            }
-        }else{
-            for (int i = p; i >= 0; i--) {
-                if (i==n || (i-1)==n)
-                i--;
-                count++;
-
-            }
-        }
+        int count = Math.min(pagina, total - pagina);
         System.out.println(count);
         return count;
     }
